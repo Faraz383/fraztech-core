@@ -1,0 +1,25 @@
+/* FrazTech 6.3.0 — scoped hero artwork motion; left copy unchanged. */
+@media (prefers-reduced-motion: no-preference) {
+ body.home .hero-visual.ft-liquid-motion > img,
+ body.home .hero-visual.ft-liquid-motion > picture {animation:ftHeroFloat 9s ease-in-out infinite;transform-origin:center center;will-change:transform}
+ body.home .hero-visual.ft-liquid-motion .ft-liquid-orbit {animation:ftHeroOrbit 16s linear infinite}
+ body.home .hero-visual.ft-liquid-motion .ft-liquid-glint {animation:ftHeroGlint 7s ease-in-out infinite}
+ body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow {animation:ftHeroCardPulse 6s ease-in-out infinite}
+ body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow:nth-of-type(2){animation-delay:-2s}
+ body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow:nth-of-type(3){animation-delay:-4s}
+ @keyframes ftHeroFloat {0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-7px,0) scale(1.012)}}
+ @keyframes ftHeroOrbit {from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+ @keyframes ftHeroGlint {0%,100%{opacity:.12;transform:translate(-50%,-50%) scale(.88)}50%{opacity:.38;transform:translate(-50%,-50%) scale(1.08)}}
+ @keyframes ftHeroCardPulse {0%,100%{opacity:.09;transform:translateY(0)}50%{opacity:.25;transform:translateY(-5px)}}
+}
+body.home .hero-visual.ft-liquid-motion {isolation:isolate}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-effects {position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;border-radius:inherit}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-orbit {position:absolute;left:50%;top:48%;width:65%;aspect-ratio:1;border:1px solid rgba(223,255,236,.28);border-radius:50%;box-shadow:inset 0 0 28px rgba(140,255,181,.05),0 0 25px rgba(100,220,150,.08);transform:translate(-50%,-50%);opacity:.55}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-orbit:before {content:'';position:absolute;top:11%;left:13%;width:8px;height:8px;border-radius:50%;background:#d7ffe5;box-shadow:0 0 14px 5px rgba(102,233,147,.42)}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-glint {position:absolute;left:51%;top:46%;width:40%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,rgba(229,255,232,.3),transparent 57%);mix-blend-mode:screen;transform:translate(-50%,-50%);opacity:.18}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow {position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:22%;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(185,255,215,.03) 65%);backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px);box-shadow:0 8px 30px rgba(31,107,69,.06);opacity:.12}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow.card-a{left:12%;top:14%;width:27%;height:15%;transform:rotate(-10deg)}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow.card-b{left:7%;top:61%;width:29%;height:15%;transform:rotate(7deg)}
+body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow.card-c{right:5%;top:55%;width:25%;height:16%;transform:rotate(-8deg)}
+@media(max-width:767px){body.home .hero-visual.ft-liquid-motion .ft-liquid-card-glow{display:none}body.home .hero-visual.ft-liquid-motion .ft-liquid-orbit{opacity:.25}}
+@media(prefers-reduced-motion:reduce){body.home .hero-visual.ft-liquid-motion .ft-liquid-effects{display:none!important}}

@@ -1,0 +1,60 @@
+
+/* Fraztech article TOC scrollspy — V5.4.6 */
+.editorial-layout .article-toc.ft-scrollspy-ready{
+  --ft-toc-progress:0%;
+  position:sticky;
+  top:110px;
+  max-height:calc(100vh - 140px);
+  overflow:auto;
+  scrollbar-width:thin;
+}
+.editorial-layout .article-toc.ft-scrollspy-ready::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:42px;
+  bottom:10px;
+  width:2px;
+  border-radius:999px;
+  background:linear-gradient(to bottom,#73b935 var(--ft-toc-progress),rgba(16,72,55,.11) var(--ft-toc-progress));
+}
+.editorial-layout .article-toc.ft-scrollspy-ready a{
+  position:relative;
+  display:block;
+  padding:9px 12px 9px 18px;
+  margin:1px 0;
+  border-radius:10px;
+  transition:background-color .18s ease,color .18s ease,transform .18s ease,font-weight .18s ease;
+}
+.editorial-layout .article-toc.ft-scrollspy-ready a::before{
+  content:"";
+  position:absolute;
+  left:-3px;
+  top:50%;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  transform:translateY(-50%) scale(.72);
+  background:#d7e6df;
+  border:2px solid rgba(255,255,255,.92);
+  box-shadow:0 0 0 1px rgba(16,72,55,.12);
+  transition:.18s ease;
+}
+.editorial-layout .article-toc.ft-scrollspy-ready a.is-active{
+  color:#0e6f4f!important;
+  background:rgba(213,245,229,.58);
+  font-weight:800;
+  transform:translateX(2px);
+}
+.editorial-layout .article-toc.ft-scrollspy-ready a.is-active::before{
+  background:#74b936;
+  transform:translateY(-50%) scale(1);
+  box-shadow:0 0 0 4px rgba(116,185,54,.13);
+}
+.ft-lang-rtl .editorial-layout .article-toc.ft-scrollspy-ready::before{left:auto;right:0}
+.ft-lang-rtl .editorial-layout .article-toc.ft-scrollspy-ready a{padding-left:12px;padding-right:18px}
+.ft-lang-rtl .editorial-layout .article-toc.ft-scrollspy-ready a::before{left:auto;right:-3px}
+.ft-lang-rtl .editorial-layout .article-toc.ft-scrollspy-ready a.is-active{transform:translateX(-2px)}
+@media(max-width:900px){
+ .editorial-layout .article-toc.ft-scrollspy-ready{position:relative;top:auto;max-height:none;overflow:visible}
+}

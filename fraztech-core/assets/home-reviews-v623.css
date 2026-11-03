@@ -1,0 +1,21 @@
+.ft-home-reviews{overflow:hidden;padding:clamp(64px,8vw,112px) 0;background:radial-gradient(ellipse at 75% 15%,rgba(181,228,211,.23),transparent 48%)}
+.ft-home-reviews .ft-review-heading-row{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:32px}
+.ft-home-reviews .ft-review-heading-row .section-heading{max-width:640px}
+.ft-review-controls{display:flex;gap:10px;flex-shrink:0}
+.ft-review-arrow{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.58);background:rgba(255,255,255,.48);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 8px 24px rgba(20,50,39,.08);font-size:22px;color:#163e32;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.ft-review-arrow:hover{transform:translateY(-2px);background:rgba(255,255,255,.78)}
+.ft-review-viewport{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;cursor:grab;touch-action:pan-x;scroll-behavior:smooth;mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent)}
+.ft-review-viewport::-webkit-scrollbar{display:none}.ft-review-viewport.is-dragging{cursor:grabbing;scroll-behavior:auto;user-select:none}
+.ft-review-track{display:flex;gap:18px;width:max-content;padding:10px 8px 22px;animation:none;will-change:transform}
+
+.ft-review-duplicate{display:flex;gap:18px;margin-left:18px}
+.ft-review-card{width:clamp(280px,31vw,370px);min-height:245px;box-sizing:border-box;padding:25px;border:1px solid rgba(255,255,255,.7);border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.76),rgba(239,250,245,.42));backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(134,176,158,.12),0 16px 40px rgba(21,54,42,.08);display:flex;flex-direction:column;flex-shrink:0}
+.ft-review-top{display:flex;align-items:center;gap:12px}.ft-review-avatar{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;flex-shrink:0;background:linear-gradient(145deg,#e9fff4,#9bcbb5 50%,#477b65);box-shadow:inset 2px 2px 4px rgba(255,255,255,.9),inset -3px -4px 7px rgba(22,68,47,.22),0 8px 16px rgba(39,91,66,.2);transform:perspective(90px) rotateY(-7deg) rotateX(4deg)}
+.ft-review-avatar span{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(217,245,231,.72));color:#245441;font-weight:800;font-size:12px;box-shadow:0 2px 5px rgba(15,61,41,.12)}
+.ft-avatar-1{background:linear-gradient(145deg,#fff1d9,#d5b37c 50%,#88643b)}.ft-avatar-2{background:linear-gradient(145deg,#e6edff,#a8b9e7 50%,#576b9e)}.ft-avatar-3{background:linear-gradient(145deg,#fbe7f3,#dda9c7 50%,#8b5474)}.ft-avatar-4{background:linear-gradient(145deg,#e6f7ff,#99c8d9 50%,#47798a)}
+.ft-review-person{display:flex;flex-direction:column;gap:4px;min-width:0}.ft-review-person strong{font-size:14px;overflow-wrap:anywhere;color:#1b342b}.ft-review-person small{font-size:11px;color:#60766b}.ft-review-source{margin-left:auto;width:29px;height:29px;border-radius:9px;display:grid;place-items:center;background:#1dbf73;color:white;font-weight:800;font-size:18px;box-shadow:0 5px 12px rgba(29,191,115,.2)}
+.ft-review-stars{margin:21px 0 11px;color:#b98326;letter-spacing:3px;font-size:15px}.ft-review-copy{font-size:14px;line-height:1.7;color:#334a40;margin:0 0 18px}.ft-review-verified{margin-top:auto;padding-top:13px;border-top:1px solid rgba(69,108,89,.13);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#71877b}
+.ft-review-foot{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:0 8px;font-size:12px;color:#75877e}.ft-review-foot a{color:#255c46;text-decoration:none;font-weight:650}.ft-review-foot a:hover{text-decoration:underline}
+
+@media(max-width:680px){.ft-home-reviews .ft-review-heading-row{align-items:flex-start;flex-direction:column}.ft-review-controls{align-self:flex-end;margin-top:-6px}.ft-review-card{width:min(82vw,330px);min-height:260px;padding:21px}.ft-review-foot{align-items:flex-start;flex-direction:column;gap:8px}.ft-review-track{animation:none}}
+@media(prefers-reduced-motion:reduce){.ft-review-track{animation:none}.ft-review-viewport{scroll-behavior:auto}}

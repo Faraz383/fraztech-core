@@ -1,0 +1,59 @@
+/* FrazTech v6.2.9 — native 2D system cursor, normal OS size.
+ * No PNG/SVG hotspot: the OS/browser supplies a precise arrow tip.
+ * Keep normal pointer, text, grab and progress cursor behavior.
+ */
+
+/* Trail: palette-compatible champagne/lime/gold with a darker amber edge.
+   It remains visible on white, mint, light-green and dark-green surfaces. */
+.ft-v619-trail-dot{
+  position:fixed;left:0;top:0;
+  width:calc(10.5px - var(--t)*5.7px);height:calc(10.5px - var(--t)*5.7px);
+  margin-left:calc((10.5px - var(--t)*5.7px)/-2);margin-top:calc((10.5px - var(--t)*5.7px)/-2);
+  border-radius:50%;pointer-events:none;z-index:2147483645;opacity:0;will-change:transform;
+  background:radial-gradient(circle,
+    rgba(255,255,250,1) 0 13%,
+    rgba(239,255,198,.99) 14% 28%,
+    rgba(255,211,105,.97) 29% 48%,
+    rgba(224,143,39,.86) 49% 66%,
+    rgba(117,73,14,.28) 67% 75%,
+    rgba(117,73,14,0) 84%);
+  box-shadow:0 0 calc(10px - var(--t)*3px) rgba(229,153,48,.46),0 0 calc(18px - var(--t)*5px) rgba(229,248,139,.25);
+  transition:opacity .09s ease,filter .09s ease
+}
+.ft-v619-trail-dot.is-visible{opacity:calc(1 - var(--t)*.42)}
+.ft-v619-trail-dot.is-settled{opacity:0}
+.ft-v619-trail-dot.is-action{filter:saturate(1.08) brightness(1.08)}
+
+/* Click effect is anchored to the native pointer event coordinates. */
+.ft-v619-burst{position:fixed;left:0;top:0;width:0;height:0;pointer-events:none;z-index:2147483647}
+.ft-v619-burst:before{
+  content:"";position:absolute;left:-3px;top:-3px;width:6px;height:6px;border-radius:50%;
+  background:#fffef2;
+  box-shadow:0 0 5px #fff,0 0 10px rgba(232,255,149,.95),0 0 16px rgba(229,148,44,.68);
+  animation:ftV619TipFlash .30s ease-out forwards
+}
+.ft-v619-burst:after{
+  content:"";position:absolute;left:0;top:-2.5px;width:34px;height:5px;transform-origin:left center;border-radius:999px;
+  background:linear-gradient(90deg,rgba(255,255,250,1) 0%,rgba(238,255,191,.98) 14%,rgba(255,208,97,.94) 36%,rgba(222,139,37,.64) 65%,transparent 100%);
+  box-shadow:0 0 9px rgba(224,145,42,.34),0 0 12px rgba(224,245,130,.25);
+  animation:ftV619FrontStreak .35s ease-out forwards
+}
+.ft-v619-burst i{position:absolute;left:0;top:-2px;width:4px;height:4px;border-radius:50%;background:linear-gradient(135deg,#fff,#f0ffc0 38%,#e19734 100%);box-shadow:0 0 7px rgba(220,144,40,.46);animation:ftV619Spark .46s cubic-bezier(.1,.7,.2,1) var(--delay) forwards}
+
+@keyframes ftV619TipFlash{0%{opacity:1;transform:scale(.55)}60%{opacity:.95;transform:scale(1.18)}100%{opacity:0;transform:scale(1.60)}}
+@keyframes ftV619FrontStreak{0%{opacity:1;transform:scaleX(.04)}45%{opacity:.95;transform:scaleX(1)}100%{opacity:0;transform:scaleX(1.14)}}
+@keyframes ftV619Spark{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.16)}}
+
+.ft-v619-reveal{--ft-v619-delay:0ms}
+.ft-v619-reveal:not(.is-visible){opacity:.01;transform:translate3d(0,5px,0)}
+.ft-v619-reveal.is-visible{opacity:1;transform:translate3d(0,0,0);transition:opacity .18s ease var(--ft-v619-delay),transform .22s cubic-bezier(.22,.78,.22,1) var(--ft-v619-delay)}
+
+.elementor-editor-active .ft-v619-trail-dot{display:none!important}
+@media (hover:none),(pointer:coarse){
+  .ft-v619-trail-dot{display:none!important}
+  .ft-v619-reveal,.ft-v619-reveal:not(.is-visible),.ft-v619-reveal.is-visible{opacity:1!important;transform:none!important;transition:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .ft-v619-trail-dot,.ft-v619-burst{display:none!important}
+  .ft-v619-reveal,.ft-v619-reveal:not(.is-visible),.ft-v619-reveal.is-visible{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+}

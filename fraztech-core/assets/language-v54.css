@@ -1,0 +1,40 @@
+.ft-language-switcher{position:relative;flex:0 0 auto;display:flex;align-items:center;z-index:95}
+.ft-language-trigger{min-width:54px;height:42px;padding:0 11px;border:1px solid rgba(255,255,255,.95);border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(244,251,247,.74));box-shadow:inset 0 1px 0 #fff,0 6px 18px rgba(16,43,35,.08);color:#173d31;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:800;letter-spacing:.06em;line-height:1;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .18s,box-shadow .18s,border-color .18s}
+.ft-language-trigger:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 #fff,0 9px 22px rgba(16,43,35,.12);border-color:#d9edcf}
+.ft-language-trigger[aria-expanded="true"]{border-color:#b7dc8a;background:#f7ffe7}
+.ft-language-caret{font-size:14px;opacity:.7;transition:transform .18s}.ft-language-trigger[aria-expanded="true"] .ft-language-caret{transform:rotate(180deg)}
+.ft-language-menu{position:absolute;right:0;top:calc(100% + 10px);width:190px;padding:8px;border:1px solid rgba(255,255,255,.98);border-radius:18px;background:rgba(248,252,249,.96);box-shadow:0 20px 48px rgba(16,43,35,.18);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.ft-language-menu[hidden]{display:none!important}.ft-language-option{width:100%;border:0;background:transparent;border-radius:11px;padding:9px 10px;display:grid;grid-template-columns:36px 1fr 8px;gap:8px;align-items:center;text-align:left;color:#173d31;font-size:12px}.ft-language-option:hover,.ft-language-option.is-active{background:#eaf7df}.ft-language-option>span{font-size:10px;letter-spacing:.08em;font-weight:800;color:#5d765e}.ft-language-option>b{font-weight:650}.ft-language-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+body.ft-language-busy{cursor:progress}.ft-language-switcher.is-busy .ft-language-trigger{opacity:.78}.ft-language-switcher.is-busy .ft-language-caret{animation:ftLangPulse .8s ease-in-out infinite alternate}@keyframes ftLangPulse{to{opacity:.25}}
+html[dir="rtl"] .ft-language-menu{right:auto;left:0}.ft-language-switcher,[data-no-translate],.notranslate{direction:ltr}
+@media(min-width:801px) and (max-width:1280px){body>header .ft-language-switcher{margin-left:auto}body>header .nav-cta{margin-left:0}}
+@media(max-width:800px){.ft-language-trigger{min-width:47px;height:38px;padding:0 8px;border-radius:12px}.ft-language-menu{position:fixed;top:auto;right:18px;left:auto;width:min(230px,calc(100vw - 36px));margin-top:8px}.ft-language-option{padding:11px 12px}}
+@media(max-width:480px){.ft-language-trigger{min-width:42px;height:36px;padding:0 7px;font-size:11px}.ft-language-caret{display:none}.ft-language-switcher{margin-left:auto}body>header .nav-cta{padding-inline:10px}}
+.ft-language-notice{position:absolute;right:0;top:calc(100% + 64px);width:260px;padding:10px 12px;border:1px solid rgba(255,255,255,.95);border-radius:14px;background:rgba(248,252,249,.97);box-shadow:0 14px 38px rgba(16,43,35,.16);color:#173d31;font-size:12px;line-height:1.45;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.ft-language-notice[hidden]{display:none!important}.ft-language-notice[data-kind="error"]{border-color:#f0c8c8;background:rgba(255,248,248,.98)}
+html[dir="rtl"] .ft-language-notice{right:auto;left:0;text-align:right}
+@media(max-width:800px){.ft-language-notice{position:fixed;right:18px;left:auto;top:78px;width:min(300px,calc(100vw - 36px))}html[dir="rtl"] .ft-language-notice{right:auto;left:18px}}
+
+.ft-language-option>i{width:7px;height:7px;border-radius:50%;background:#d9e1dc;box-shadow:inset 0 0 0 1px rgba(20,61,49,.06)}
+.ft-language-option.is-pack-ready>i{background:#75c94c;box-shadow:0 0 0 3px rgba(117,201,76,.12)}
+.ft-language-notice{max-height:140px;overflow:auto}
+.ft-language-switcher.is-busy .ft-language-notice{min-width:270px}
+
+/* V5.4.4: frontend switcher is instant-cache only; no translation progress UI */
+body:not(.wp-admin) .ft-language-switcher.is-busy .ft-language-caret{animation:none!important}
+body:not(.wp-admin) .ft-language-notice{max-width:320px}
+
+/* V5.4.6 language flags */
+.ft-language-trigger{display:inline-flex!important;align-items:center!important;gap:7px!important}
+.ft-language-current-flag,.ft-language-flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;line-height:1;font-size:16px;filter:saturate(.94)}
+.ft-language-current-flag{font-size:17px}
+.ft-language-option{grid-template-columns:24px 34px 1fr 8px!important}
+.ft-language-option .ft-language-short{font-size:10px;font-weight:850;letter-spacing:.08em;opacity:.62}
+.ft-lang-rtl .ft-language-menu{direction:ltr}
+.ft-lang-rtl .ft-language-option b{direction:rtl;text-align:left}
+
+/* V6.1.0 legacy-notice suppression: frontend languages fail open, never block. */
+.ft-language-notice{display:none!important}
+
+/* V6.1.2: never expose stale pack-status notices to visitors */
+.ft-language-notice{display:none!important}

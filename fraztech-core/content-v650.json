@@ -1,0 +1,171 @@
+{
+  "pages": {
+    "139": {
+      "title": "Services",
+      "fields": {
+        "t818bbe4d": "Not another website for the sake of it",
+        "td70f9e3c": "A better way to run your business",
+        "tec62517a": "Whether customers are getting lost, work is taking too long or your systems no longer fit, we find the real issue first and choose the right mix of design, development and AI to solve it",
+        "tee96b724": "Make the next step obvious to your users",
+        "t54c89419": "A website that helps people take action"
+      }
+    },
+    "141": {
+      "title": "About Faraz",
+      "fields": {
+        "t1d8b87e1": "Hi, I'm Faraz",
+        "tb7cea6f8": "I ask what needs fixing",
+        "t249d08e1": "Then find a better way",
+        "t7ef6b88d": "I work with founders and businesses that need someone to understand the challenge before recommending a design, a website or a new system",
+        "t927d7bff": "Ask better questions",
+        "t88f25c71": "Build useful answers",
+        "tf71ca98e": "Building a product is easier than ever. Knowing what deserves to be built takes judgment. I look at the people using it, the work happening behind it and the decisions that could make it simpler",
+        "ta5b0ae31": "Sometimes the answer is a clearer customer journey. Sometimes it is a connected system or a carefully chosen AI workflow. The goal is not more technology, but less friction",
+        "t105a211c": "When a project needs specialist development or AI expertise, I coordinate the right people and stay involved in the decisions that shape the result",
+        "ta9c55ad1": "From understanding users",
+        "tc32a6070": "To solving business problems"
+      }
+    },
+    "148": {
+      "title": "Solutions",
+      "fields": {
+        "t3b4460cf": "Start with what is not working",
+        "t47ae2018": "Build around what matters",
+        "tc9f3f469": "A slow process, missed enquiries or a product people struggle to use can cost more than time. I help uncover the cause, then design a practical solution that fits your team and customers",
+        "t7746aa61": "Get the first version right",
+        "ta2dfdb8b": "Identify the one problem your first release must solve, test the journey and build from real feedback",
+        "te553737b": "Turn visitors into conversations",
+        "t55ec57f0": "Make your offer easier to understand and give customers a clear, confident next step",
+        "t7738b3a9": "Make complicated products easier",
+        "t127291f2": "Simplify everyday tasks and connect scattered screens into a consistent experience"
+      }
+    },
+    "142": {
+      "title": "Tech, AI & product articles",
+      "fields": {
+        "t492403a1": "Make sense of new technology",
+        "te1c99da3": "Without the noise",
+        "tf68792b4": "Practical ideas on AI, automation, product design and online business, with a focus on what is useful today and what is worth preparing for"
+      }
+    },
+    "145": {
+      "title": "Packages",
+      "fields": {
+        "t6522f107": "Start with the real need",
+        "td326a2ec": "Then agree on the scope",
+        "tbd4c347c": "Tell me what you need to improve. We will agree on the deliverables, timeline and budget before work begins"
+      }
+    },
+    "153": {
+      "title": "Contact us",
+      "fields": {
+        "t752b0b39": "Tell me what is holding",
+        "t1a416705": "your business back",
+        "t33e430ee": "Maybe customers are dropping off, your team is repeating the same work or your idea needs a clearer direction. Tell me what is happening and we can work out the next step",
+        "t9b609f7d": "Good solutions begin",
+        "t840537e1": "with a real conversation"
+      }
+    },
+    "152": {
+      "title": "Work",
+      "fields": {
+        "tf20516ba": "The thinking behind the work",
+        "t38845dfa": "Explore interface and product work with a focus on clearer journeys, useful features and decisions that make digital experiences easier. Concept studies are labelled separately from client projects"
+      }
+    }
+  },
+  "services": {
+    "154": {
+      "title": "Admin panels & dashboards",
+      "headline": "Make the numbers easier to act on",
+      "description": "Give your team a clear view of the information, tasks and decisions that matter instead of another dashboard full of noise"
+    },
+    "155": {
+      "title": "Product partnerships",
+      "headline": "A product partner who asks why",
+      "description": "Work through priorities, trade-offs and user needs before committing time and budget to features"
+    },
+    "156": {
+      "title": "CMS development",
+      "headline": "Content your team can actually manage",
+      "description": "Build a CMS workflow that makes publishing, updating and maintaining your website simpler"
+    },
+    "157": {
+      "title": "AI development",
+      "headline": "Use AI where it earns its place",
+      "description": "Explore assistants, search and smart features that solve a specific customer or team problem with sensible safeguards"
+    },
+    "158": {
+      "title": "WooCommerce development",
+      "headline": "Make buying feel straightforward",
+      "description": "Improve product discovery, checkout and store management without making daily operations harder"
+    },
+    "159": {
+      "title": "Shopify development",
+      "headline": "Help shoppers find their next step",
+      "description": "Create a Shopify experience that makes products easier to understand and purchases easier to complete"
+    },
+    "160": {
+      "title": "Landing page design & development",
+      "headline": "Give every click a clear purpose",
+      "description": "Build focused landing pages that answer customer questions and guide visitors towards a useful next action"
+    },
+    "161": {
+      "title": "AI automation",
+      "headline": "Spend less time on repeat work",
+      "description": "Connect the tools you already use and automate suitable tasks while keeping people in control"
+    },
+    "162": {
+      "title": "Mobile app development",
+      "headline": "Make everyday tasks easier on mobile",
+      "description": "Design and develop mobile journeys around what people need to do, not a long list of features"
+    },
+    "163": {
+      "title": "WordPress development",
+      "headline": "A WordPress site that works for your team",
+      "description": "Make your website easy for customers to use and straightforward for your business to maintain"
+    },
+    "164": {
+      "title": "UI/UX design",
+      "headline": "Remove the friction from the experience",
+      "description": "Understand where users hesitate, then shape clearer flows and interfaces around their needs"
+    },
+    "165": {
+      "title": "Website development",
+      "headline": "Turn your website into a useful business tool",
+      "description": "Build a fast, accessible web experience that explains your value and supports the way customers take action"
+    }
+  },
+  "faqs": {
+    "214": {
+      "title": "Do you offer both design and development?",
+      "question": "Can you help with both design and development?",
+      "answer": "Yes. I can handle the product and UI/UX direction and coordinate development with the right specialists. We agree on responsibilities, scope and handover before work begins"
+    },
+    "215": {
+      "title": "How much does a project cost?",
+      "question": "How do you work out the project cost?",
+      "answer": "First we discuss the problem, the users and what success would look like. Then I recommend a realistic scope and provide a quote based on the work involved rather than guessing from a feature list"
+    },
+    "216": {
+      "title": "Can you improve an existing product?",
+      "question": "Can you improve what we already have?",
+      "answer": "Absolutely. We can review the current experience, find where customers or your team get stuck, and improve what matters without rebuilding everything unnecessarily"
+    },
+    "217": {
+      "title": "What do I receive at the end?",
+      "question": "What will I receive when the project is complete?",
+      "answer": "That depends on the agreed scope. Before starting, we document the deliverables, such as design files, prototypes, development handover or a working product, so you know exactly what to expect"
+    },
+    "218": {
+      "title": "How do revisions and payments work?",
+      "question": "How do feedback, revisions and payments work?",
+      "answer": "We agree on milestones, feedback rounds and payment terms before starting. You will know when to review the work, what is included and how any additional requests are handled"
+    },
+    "219": {
+      "title": "Can we work together remotely?",
+      "question": "Can we work together from different countries?",
+      "answer": "Yes. I work remotely with clients and keep communication clear through agreed channels, regular updates and review checkpoints that fit our time zones"
+    }
+  }
+}

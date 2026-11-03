@@ -1,0 +1,3 @@
+/* Desktop-only alignment after shortening the manually edited hero copy */
+@media (min-width: 1025px) { body.home .hero.wrap > .hero-visual { margin-top: clamp(28px, 3.5vw, 58px); } }
+@media (max-width: 1024px) { body.home .hero.wrap > .hero-visual { margin-top: 0; } }
